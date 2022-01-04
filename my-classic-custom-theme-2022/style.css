@@ -7,3 +7,23 @@ Version: 1.2
 body {
 /*    background: red;*/
 }
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.main-nav ul,
+.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.main-nav ul > li,
+.footer-nav ul > li {
+    margin-right: 1em;
+}
