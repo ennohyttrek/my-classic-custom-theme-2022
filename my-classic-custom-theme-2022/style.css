@@ -12,6 +12,39 @@ Version: 1.2
     box-sizing: border-box;
 }
 
+/*LAYOUT*/
+
+
+/*
+Einfache schnelle Verbesserung des Layouts,
+aber nicht sehr flexibel.
+.main-header,
+.main-nav,
+.main-content,
+.main-footer {
+    padding: 20px;
+}
+*/
+
+.more-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    padding: 1rem 20px;
+}
+
+.main-content p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
 
 /*NAVIGATION*/
 
@@ -26,7 +59,7 @@ nav a {
 .main-nav ul,
 .footer-nav ul {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .main-nav ul > li,
@@ -38,47 +71,27 @@ nav a {
 /*COLOR & STYLE*/
 
 body {
-   background: hsl(200,21%,13%);
+    background: hsl(200, 21%, 13%);
 }
 
 .main-header {
-   background: hsl(200,21%,55%);
+    background: hsl(200, 21%, 55%);
 }
 
 .main-nav {
-      background: hsl(200,21%,76%);
+    background: hsl(200, 21%, 76%);
 }
 
 .main-nav a {
-      color: hsl(200,21%,21%);
+    color: hsl(200, 21%, 21%);
 }
 
 .main-content {
- background: #fff;
+    background: #fff;
 }
 
 .main-header,
 .main-footer,
 .main-footer a {
-            color: #fff;
+    color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
