@@ -40,8 +40,16 @@ body {
    background: hsl(200,21%,55%);
 }
 
-.main-footer {
- 
+.main-nav {
+      background: hsl(200,21%,76%);
+}
+
+.main-nav a {
+      color: hsl(200,21%,21%);
+}
+
+.main-content {
+ background: #fff;
 }
 
 .main-header,
