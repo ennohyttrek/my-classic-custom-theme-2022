@@ -3,6 +3,10 @@
 
 <h1><?php bloginfo('title'); ?></h1>
 
+    <nav id="main-nav" class="main-nav">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    </nav>
+
 <!--Loop starts-->
 <?php 
         if ( have_posts() ) : 

@@ -9,8 +9,9 @@ add_action( 'wp_enqueue_scripts', 'custom_stylesheets' );
 function register_my_menus() {
   register_nav_menus(
     array(
-        'header-menu' => __( 'Main Menu' ),
-        'mobile-menu' => __( 'Mobile Menu' ),
+        'header-menu' => __( 'Top Menu' ),
+        'secondary-menu' => __( 'Secondary Menu' ),
+        'mobile-menu' => __( 'Mobile Menu' ),        
         'footer-menu' => __( 'Footer Menu' )
      )
    );
