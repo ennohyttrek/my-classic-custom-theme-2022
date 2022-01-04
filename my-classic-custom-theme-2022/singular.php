@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <header id="main-header" class="main-header">
-    <h1><?php bloginfo('title'); ?></h1>
+    <p><?php bloginfo('title'); ?></p>
 </header>
 
 <nav id="main-nav" class="main-nav">
@@ -15,7 +15,7 @@
             while ( have_posts() ) : the_post(); 
 ?>
 
-    <h2><?php the_title(); ?></h2>
+    <h1><?php the_title(); ?></h1>
 
     <?php 
 
@@ -28,6 +28,6 @@
 </main>
 
 <footer id="main-footer" class="main-footer">
-    <p>index.php</p>
+        <p>singular.php</p>
 
     <?php get_footer(); ?>
