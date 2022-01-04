@@ -1,31 +1,32 @@
 <?php get_header(); ?>
 
-<header>
-<h1><?php bloginfo('title'); ?></h1>
-</header>    
+<header id="main-header" class="main-header">
+    <h1><?php bloginfo('title'); ?></h1>
+</header>
 
-    <nav id="main-nav" class="main-nav">
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-    </nav>
+<nav id="main-nav" class="main-nav">
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+</nav>
 
-<!--Loop starts-->
-<?php 
+<main id="main-content" class="main-content">
+    <!--Loop starts-->
+    <?php 
         if ( have_posts() ) : 
             while ( have_posts() ) : the_post(); 
 ?>
 
-<h2><?php the_title(); ?></h2>
+    <h2><?php the_title(); ?></h2>
 
-<?php 
+    <?php 
 
         the_content();
             
             endwhile; 
         endif; 
 ?>
-<!--Loop ends-->
+    <!--Loop ends-->
+</main>
 
+<footer id="main-footer" class="main-footer">
 
-<footer>
-
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
