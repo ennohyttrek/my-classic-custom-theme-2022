@@ -133,12 +133,23 @@ h2 {
 @media only screen and (min-width: 544px) {
 
 
+
+}
+
+@media only screen and (min-width: 721px) {
+
+    article.my-singular-post-content section {
+        column-count: 2;
+    }
+
 }
 
 
 
 @media only screen and (min-width: 921px) {
     
-
+    article.my-singular-post-content section {
+        column-count: 3;
+    }
     
 }

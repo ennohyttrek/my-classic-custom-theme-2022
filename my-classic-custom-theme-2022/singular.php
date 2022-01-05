@@ -19,7 +19,7 @@
 
     
 
-    <article class="my-post-content">
+    <article class="my-post-content my-singular-post-content">
         <h1 class="my-post-title"><?php the_title(); ?></h1>
 
        <?php  the_content(); ?>
