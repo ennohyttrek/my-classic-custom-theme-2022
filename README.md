@@ -4,7 +4,7 @@ Ein Custom Theme für WordPress, erstellt nach dem 'klassischen' Prinzip des WP 
 
 Das Theme wurde erstellt im Rahmen eines meiner WordPress Einsteiger Kurse und ist zum Üben des klassichen Theme Developments gedacht.
 
-Die Vorvserionen einschiesslich der allerersten Schritte finden sich in einzelnen ZIP Archiven unter folgendem Link zum Download:
+Die Vorversionen, einschliesslich der allerersten Schritte, finden sich in einzelnen ZIP Archiven unter folgendem Link zum Download:
 
 https://t1p.de/4ecqn
 
