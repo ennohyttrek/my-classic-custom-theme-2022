@@ -1,8 +1,12 @@
-<?php get_header(); ?>
+	
+<?php 
+/* 
+Template Name: Blank mit Hauptmenü 
+Template Post Type: post, page
+*/ 
+?>
 
-<header id="main-header" class="main-header">
-    <h1><?php bloginfo('title'); ?></h1>
-</header>
+<?php get_header(); ?>
 
 <nav id="main-nav" class="main-nav">
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
@@ -13,21 +17,19 @@
     <?php 
         if ( have_posts() ) : 
             while ( have_posts() ) : the_post(); 
-?>
+ 
+            the_content();
 
-    <h2><?php the_title(); ?></h2>
-
-    <?php 
-
-        the_content();
-            
+   
             endwhile; 
         endif; 
-?>
+    ?>
     <!--Loop ends-->
+    
 </main>
 
 <footer id="main-footer" class="main-footer">
-        <p>single.php</p>
+    <div class="inner-wrapper">
+        <p>blank.php</p>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
