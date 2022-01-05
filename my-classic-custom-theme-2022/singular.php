@@ -17,19 +17,23 @@
             while ( have_posts() ) : the_post(); 
 ?>
 
-    
+
 
     <article class="my-post-content my-singular-post-content">
-        
+
+        <?php if ( has_post_thumbnail()) : ?>
+
         <figure class="my-post-thumbnail">
             <?php the_post_thumbnail(); ?>
         </figure>
-        
+
+        <?php endif; ?>
+
         <h1 class="my-post-title"><?php the_title(); ?></h1>
 
-       <?php  the_content(); ?>
+        <?php  the_content(); ?>
     </article>
-    
+
     <?php 
             
             endwhile; 
