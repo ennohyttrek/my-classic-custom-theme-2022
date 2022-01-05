@@ -28,7 +28,7 @@ nav.footer-nav,
 
 /*LAYOUT*/
 
-
+nav.mobile-nav a,
 figure,
 .more-link,
 h1,
@@ -55,6 +55,11 @@ ol {
     margin-bottom: 1em;
 }
 
+nav.mobile-nav,
+.main-header {
+    padding-top: 3em;
+}
+
 
 .my-post-content,
 .main-nav > div,
@@ -63,10 +68,36 @@ ol {
     margin: 0 auto;
 }
 
+.burger-icon {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
 
+.my-copyright {
+    padding-bottom: 50vh;
+}
+
+nav.mobile-nav {
+    min-height: 100vh;
+}
+
+nav.mobile-nav a {
+    display: inline-block;
+    width: 100%;
+}
+
+nav.mobile-nav ul {
+    padding: 0;
+}
 
 
 /*NAVIGATION*/
+
+.burger-icon {
+    position: fixed;
+    top: 0;
+}
 
 nav ul {
     list-style-type: none;
@@ -94,8 +125,13 @@ body {
     background: hsl(200, 21%, 13%);
 }
 
+
 .main-header {
     background: hsl(200, 21%, 55%);
+}
+
+.burger-icon {
+    background: hsla(200, 21%, 55%,0.9);
 }
 
 .main-nav {
@@ -110,11 +146,19 @@ body {
     background: #fff;
 }
 
+
+.burger-icon a,
 .main-header,
 .main-footer,
 .main-footer a {
     color: #fff;
 }
+
+nav.mobile-nav a {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
 
 
 
@@ -138,21 +182,41 @@ h2 {
     font-weight: 500;
 }
 
+.burger-icon {
+    font-size: 2em;
+}
+
+nav.mobile-nav a {
+    font-size: 1.5em;
+}
+
 
 /*RESPONSIVE*/
 
 
-@media only screen and (min-width: 544px) {}
+@media only screen and (min-width: 544px) {
+
+    nav.main-nav,
+    nav.footer-nav {
+        display: block;
+    }
+
+    nav.burger-icon,
+    nav.mobile-nav {
+        display: none;
+    }
+
+}
 
 @media only screen and (min-width: 721px) {
-    
-        .my-multi-column {
+
+    .my-multi-column {
         column-count: 2;
     }
-    
+
     body.blog .my-post-thumbnail {
-    width: 50%;
-}
+        width: 50%;
+    }
 
 
 }
@@ -161,14 +225,14 @@ h2 {
 
 @media only screen and (min-width: 921px) {
 
-            .my-multi-column {
+    .my-multi-column {
         column-count: 3;
     }
 
-    
-        body.blog .my-post-thumbnail {
-    width: 33%;
-}
+
+    body.blog .my-post-thumbnail {
+        width: 33%;
+    }
 
 }
 
@@ -188,4 +252,3 @@ h2 {
     font-weight: 700;
     width: 10em;
 }
-

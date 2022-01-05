@@ -6,3 +6,6 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <nav id="burger-icon" class="burger-icon">
+        <a href="#mobile-nav"><i class="fas fa-bars"></i></a>
+    </nav>
