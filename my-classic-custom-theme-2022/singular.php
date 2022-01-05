@@ -24,7 +24,7 @@
         <?php if ( has_post_thumbnail()) : ?>
 
         <figure class="my-post-thumbnail">
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail( 'large' ); ?>
         </figure>
 
         <?php endif; ?>

@@ -67,9 +67,7 @@ ol {
     margin: 0 auto;
 }
 
-body.blog .my-post-thumbnail {
-    width: 360px;
-}
+
 
 
 /*NAVIGATION*/
@@ -150,6 +148,10 @@ h2 {
         .my-multi-column {
         column-count: 2;
     }
+    
+    body.blog .my-post-thumbnail {
+    width: 50%;
+}
 
     /*
     article.my-singular-post-content section {
@@ -172,5 +174,9 @@ h2 {
         column-count: 3;
     }
 
+    
+        body.blog .my-post-thumbnail {
+    width: 33%;
+}
 
 }
