@@ -45,6 +45,6 @@
 
 <footer id="main-footer" class="main-footer">
     <div class="inner-wrapper">
-        <p>singular.php</p>
+        <p class="dev-info">singular.php</p>
 
         <?php get_footer(); ?>

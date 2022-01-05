@@ -2,6 +2,10 @@
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
     </nav>
 <p>&copy; 2022 Enno Hyttrek</p>
+    <nav id="mobile-nav" class="mobile-nav">
+        <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
+    </nav>
+
 </div>
 </footer>
 

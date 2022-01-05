@@ -18,20 +18,15 @@ Version: 1.6
 }
 
 
+nav.main-nav,
+nav.footer-nav,
+.dev-info {
+    display: none;
+}
+
+
 
 /*LAYOUT*/
-
-
-/*
-Einfache schnelle Verbesserung des Layouts,
-aber nicht sehr flexibel.
-.main-header,
-.main-nav,
-.main-content,
-.main-footer {
-    padding: 20px;
-}
-*/
 
 
 figure,
@@ -159,23 +154,13 @@ h2 {
     width: 50%;
 }
 
-    /*
-    article.my-singular-post-content section {
-        column-count: 2;
-    }
-*/
 
 }
 
 
 
 @media only screen and (min-width: 921px) {
-    /*  
-    article.my-singular-post-content section {
-        column-count: 3;
-    }
-    */
-    
+
             .my-multi-column {
         column-count: 3;
     }
@@ -186,3 +171,21 @@ h2 {
 }
 
 }
+
+/*DEV*/
+
+/*
+
+.dev-info {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: yellow;
+    color: red;
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    width: 10em;
+}
+

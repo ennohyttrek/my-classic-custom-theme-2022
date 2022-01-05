@@ -26,6 +26,6 @@ Template Post Type: post, page
 
 <footer id="main-footer" class="main-footer">
     <div class="inner-wrapper">
-        <p>blank.php</p>
+        <p class="dev-info">blank.php</p>
 
 <?php get_footer(); ?>
