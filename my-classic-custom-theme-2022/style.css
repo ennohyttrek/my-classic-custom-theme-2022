@@ -26,6 +26,7 @@ aber nicht sehr flexibel.
 }
 */
 
+figure,
 .more-link,
 h1,
 h2,
@@ -44,6 +45,7 @@ ol {
     padding-bottom: 2em;
 }
 
+.main-content figure,
 .main-content p {
     padding-top: 0;
     padding-bottom: 0;
@@ -130,26 +132,34 @@ h2 {
 /*RESPONSIVE*/
 
 
-@media only screen and (min-width: 544px) {
-
-
-
-}
+@media only screen and (min-width: 544px) {}
 
 @media only screen and (min-width: 721px) {
+    
+        .my-multi-column {
+        column-count: 2;
+    }
 
+    /*
     article.my-singular-post-content section {
         column-count: 2;
     }
+*/
 
 }
 
 
 
 @media only screen and (min-width: 921px) {
-    
+    /*  
     article.my-singular-post-content section {
         column-count: 3;
     }
+    */
     
+            .my-multi-column {
+        column-count: 3;
+    }
+
+
 }
