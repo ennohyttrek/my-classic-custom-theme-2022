@@ -17,11 +17,15 @@
             while ( have_posts() ) : the_post(); 
 ?>
 
-    <h1><?php the_title(); ?></h1>
+    
 
+    <article class="my-post-content">
+        <h1 class="my-post-title"><?php the_title(); ?></h1>
+
+       <?php  the_content(); ?>
+    </article>
+    
     <?php 
-
-        the_content();
             
             endwhile; 
         endif; 
@@ -30,6 +34,7 @@
 </main>
 
 <footer id="main-footer" class="main-footer">
-    <p>singular.php</p>
+    <div class="inner-wrapper">
+        <p>singular.php</p>
 
-    <?php get_footer(); ?>
+        <?php get_footer(); ?>

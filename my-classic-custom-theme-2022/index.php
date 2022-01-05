@@ -30,6 +30,7 @@
 </main>
 
 <footer id="main-footer" class="main-footer">
-    <p>index.php</p>
+    <div class="inner-wrapper">
+        <p>index.php</p>
 
-    <?php get_footer(); ?>
+        <?php get_footer(); ?>

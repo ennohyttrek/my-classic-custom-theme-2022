@@ -46,6 +46,14 @@ ol {
 }
 
 
+.my-post-content,
+.main-nav > div,
+.inner-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
 /*NAVIGATION*/
 
 nav ul {
