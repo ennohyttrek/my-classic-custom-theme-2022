@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <header id="main-header" class="main-header">
-    <h1><?php bloginfo('title'); ?></h1>
+    <div class="inner-wrapper">
+        <h1><?php bloginfo('title'); ?></h1>
+    </div>
 </header>
 
 <nav id="main-nav" class="main-nav">

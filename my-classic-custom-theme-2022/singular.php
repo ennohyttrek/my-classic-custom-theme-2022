@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <header id="main-header" class="main-header">
-    <p><?php bloginfo('title'); ?></p>
+    <div class="inner-wrapper">
+        <p><?php bloginfo('title'); ?></p>
+    </div>
 </header>
 
 <nav id="main-nav" class="main-nav">
@@ -28,6 +30,6 @@
 </main>
 
 <footer id="main-footer" class="main-footer">
-        <p>singular.php</p>
+    <p>singular.php</p>
 
     <?php get_footer(); ?>
