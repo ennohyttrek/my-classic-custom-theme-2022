@@ -23,7 +23,7 @@
         <?php if ( has_post_thumbnail()) : ?>
         <figure class="my-post-thumbnail">
         <a href="<?php the_permalink(); ?>" alt="<?php the_title_attribute(); ?>">
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail( 'thumbnail' ); ?>
         </a>
         </figure>
         <?php endif; ?>

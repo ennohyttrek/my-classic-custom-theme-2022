@@ -17,6 +17,8 @@ Version: 1.5
     height: auto;
 }
 
+
+
 /*LAYOUT*/
 
 
@@ -63,6 +65,10 @@ ol {
 .inner-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+body.blog .my-post-thumbnail {
+    width: 360px;
 }
 
 
