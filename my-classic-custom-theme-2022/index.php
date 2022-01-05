@@ -18,7 +18,11 @@
 ?>
 
     <article class="my-post-content">
-        <h2><?php the_title(); ?></h2>
+        <h2>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </h2>
 
         <?php if ( has_post_thumbnail()) : ?>
         <figure class="my-post-thumbnail">
@@ -28,7 +32,7 @@
         </figure>
         <?php endif; ?>
 
-        <?php the_content(); ?>
+        <?php the_excerpt(); ?>
     </article>
 
 
