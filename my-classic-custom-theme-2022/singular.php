@@ -20,6 +20,11 @@
     
 
     <article class="my-post-content my-singular-post-content">
+        
+        <figure class="my-post-thumbnail">
+            <?php the_post_thumbnail(); ?>
+        </figure>
+        
         <h1 class="my-post-title"><?php the_title(); ?></h1>
 
        <?php  the_content(); ?>

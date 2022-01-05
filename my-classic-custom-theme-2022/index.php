@@ -20,18 +20,20 @@
     <article class="my-post-content">
         <h2><?php the_title(); ?></h2>
 
-        <?php if ( has_post_thumbnail() ) { ?>
+        <?php if ( has_post_thumbnail()) : ?>
 
-
-        
         <figure class="my-post-thumbnail">
             <?php the_post_thumbnail(); ?>
         </figure>
+        
+        <?php endif; ?>
 
         <?php the_content(); ?>
     </article>
+    
+    
     <?php 
-}
+
 
    
             endwhile; 
