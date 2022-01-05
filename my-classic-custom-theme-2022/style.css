@@ -1,7 +1,7 @@
 /*
 Theme Name: My 2022 Classic Custom Theme
 Author: Enno Hyttrek
-Version: 1.4
+Version: 1.5
 */
 
 /*RESET*/
@@ -10,6 +10,11 @@ Version: 1.4
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.my-post-thumbnail img {
+    width: 100%;
+    height: auto;
 }
 
 /*LAYOUT*/
