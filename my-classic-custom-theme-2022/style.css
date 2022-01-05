@@ -33,6 +33,7 @@ aber nicht sehr flexibel.
 }
 */
 
+
 figure,
 .more-link,
 h1,
@@ -65,6 +66,17 @@ ol {
 .inner-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.my-intro {
+    margin: 0 20px;
+    width: 50%;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.my-intro p {
+    margin: 0;
 }
 
 
@@ -120,6 +132,12 @@ body {
     color: #fff;
 }
 
+.my-intro {
+    background: hsl(0, 55%, 42%);
+    color: #fff;
+    border-radius: 1em;
+}
+
 
 
 /*TYPOGRAPHY*/
@@ -135,6 +153,11 @@ body {
 
 h2 {
     font-weight: 300;
+}
+
+.my-intro {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 

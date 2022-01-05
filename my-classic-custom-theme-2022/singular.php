@@ -31,7 +31,9 @@
 
         <h1 class="my-post-title"><?php the_title(); ?></h1>
         
-       
+        <div class="my-intro">
+       <?php the_excerpt(); ?>
+            </div>
 
         <?php  the_content(); ?>
     </article>
