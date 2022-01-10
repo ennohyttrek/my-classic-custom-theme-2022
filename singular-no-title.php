@@ -1,3 +1,11 @@
+<?php 
+/* 
+Template Name: Singular ohne Titel 
+Template Post Type: post, page
+*/ 
+?>
+
+
 <?php get_header(); ?>
 
 <header id="main-header" class="main-header">
@@ -34,7 +42,7 @@
         <?php endif; ?>
 
         <h1 class="my-post-title"><?php the_title(); ?></h1>
-
+        
 
         <?php  the_content(); ?>
     </article>

@@ -1,9 +1,17 @@
+<?php 
+/* 
+Template Name: Singular Seitenleiste 
+Template Post Type: post, page
+*/ 
+?>
+
+
 <?php get_header(); ?>
 
 <header id="main-header" class="main-header">
     <div class="inner-wrapper">
         <p class="site-title"><?php bloginfo('title'); ?></p>
-        
+
         <aside class="header-widgets">
             <?php dynamic_sidebar( 'header-widgets' ); ?>
         </aside>
@@ -14,7 +22,7 @@
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 </nav>
 
-<main id="main-content" class="main-content">
+<main id="main-content" class="main-content has-sidebar">
     <!--Loop starts-->
     <?php 
         if ( have_posts() ) : 
@@ -22,30 +30,38 @@
 ?>
 
 
+    <div class="inner-wrapper">
+        <article class="my-post-content my-singular-post-content">
 
-    <article class="my-post-content my-singular-post-content">
+            <?php if ( has_post_thumbnail()) : ?>
 
-        <?php if ( has_post_thumbnail()) : ?>
+            <figure class="my-post-thumbnail">
+                <?php the_post_thumbnail( 'large' ); ?>
+            </figure>
 
-        <figure class="my-post-thumbnail">
-            <?php the_post_thumbnail( 'large' ); ?>
-        </figure>
+            <?php endif; ?>
 
-        <?php endif; ?>
-
-        <h1 class="my-post-title"><?php the_title(); ?></h1>
+            <h1 class="my-post-title"><?php the_title(); ?></h1>
 
 
-        <?php  the_content(); ?>
-    </article>
+            <?php  the_content(); ?>
+        </article>
 
-    <?php 
+        <?php 
             
             endwhile; 
         endif; 
 ?>
-    <!--Loop ends-->
+        <!--Loop ends-->
+
+        <aside class="main-sidebar">
+            <?php dynamic_sidebar( 'sidebar' ); ?>
+        </aside>
+    </div>
+    <!--#inner-wrapper-->
 </main>
+
+
 
 <footer id="main-footer" class="main-footer">
     <div class="inner-wrapper">

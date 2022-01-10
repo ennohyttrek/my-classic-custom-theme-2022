@@ -2,7 +2,7 @@
 
 <header id="main-header" class="main-header">
     <div class="inner-wrapper">
-        <h1><?php bloginfo('title'); ?></h1>
+        <h1 class="site-title"><?php bloginfo('title'); ?></h1>
     </div>
 </header>
 

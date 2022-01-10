@@ -1,0 +1,8 @@
+/*
+Stylesheet to adjust the interface of the WP Editor (experimental!)
+*/
+
+
+div.is-desktop-preview {
+    width: 80%;
+}

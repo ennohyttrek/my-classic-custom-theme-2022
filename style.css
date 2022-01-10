@@ -1,7 +1,7 @@
 /*
 Theme Name: My 2022 Classic Custom Theme
 Author: Enno Hyttrek
-Version: 1.7
+Version: 1.7.2
 */
 
 /*RESET*/
@@ -24,10 +24,23 @@ nav.footer-nav,
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.main-content li a,
+.main-content p a {
+    text-decoration: underline;
+}
+
 
 
 /*LAYOUT*/
 
+.wp-block-latest-posts.wp-block-latest-posts__list,
+.main-content #privacy-change,
+.main-content #privacy-history,
+.main-content #consent-revoke,
 nav.mobile-nav a,
 figure,
 .more-link,
@@ -43,6 +56,7 @@ ol {
     padding: 1rem 20px;
 }
 
+
 .main-content {
     min-height: 70vh;
     padding-bottom: 2em;
@@ -55,12 +69,24 @@ ol {
     margin-bottom: 1em;
 }
 
-nav.mobile-nav,
-.main-header {
+.main-sidebar {
     padding-top: 3em;
 }
 
 
+nav.mobile-nav,
+.main-header {
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+
+.my-post-title {
+    padding-top: 3em;
+}
+
+
+.main-content.has-sidebar .inner-wrapper,
 .my-post-content,
 .main-nav > div,
 .inner-wrapper {
@@ -69,6 +95,7 @@ nav.mobile-nav,
 }
 
 .burger-icon {
+    z-index: 1001;
     width: 100%;
     text-align: center;
     padding: 5px 0;
@@ -89,6 +116,22 @@ nav.mobile-nav a {
 
 nav.mobile-nav ul {
     padding: 0;
+}
+
+.main-content li {
+    margin-bottom: 1em;
+}
+
+.ehy-content-list li {
+    margin-bottom: 0;
+}
+
+.main-content #privacy-change,
+.main-content #privacy-history,
+.main-content #consent-revoke {
+    display: inline-block;
+    width: 100%;
+    text-decoration: underline;
 }
 
 
@@ -131,19 +174,40 @@ body {
 }
 
 .burger-icon {
-    background: hsla(200, 21%, 55%,0.9);
+    background: hsla(200, 21%, 55%, 0.9);
 }
 
 .main-nav {
     background: hsl(200, 21%, 76%);
 }
 
+.main-content,
+.main-content a,
 .main-nav a {
     color: hsl(200, 21%, 21%);
 }
 
+.main-nav a:hover,
+.main-nav a:active,
+.main-nav .current_page_item a {
+    color: #fff;
+}
+
+
+.main-content a:hover,
+.main-content a:active,
+.main-footer a:hover,
+.main-footer a:active {
+    color: hsl(30, 94%, 55%);
+}
+
 .main-content {
     background: #fff;
+}
+
+
+.main-sidebar {
+
 }
 
 
@@ -155,7 +219,15 @@ body {
 }
 
 nav.mobile-nav a {
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-content ul li {
+    list-style-type: none;
+}
+
+.my-list-a {
+    list-style-type: disc;
 }
 
 
@@ -171,6 +243,12 @@ body {
     font-family: 'Roboto', serif;
     font-weight: 300;
     line-height: 1.3;
+}
+
+h1.site-title,
+p.site-title {
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 h2 {
@@ -196,6 +274,7 @@ nav.mobile-nav a {
 
 @media only screen and (min-width: 544px) {
 
+
     nav.main-nav,
     nav.footer-nav {
         display: block;
@@ -205,6 +284,34 @@ nav.mobile-nav a {
     nav.mobile-nav {
         display: none;
     }
+
+
+.main-content.has-sidebar .inner-wrapper {
+        display: flex;
+    }
+    
+    .main-content.has-sidebar article {
+        width: 70%;
+    }
+    
+        .main-content.has-sidebar .main-sidebar {
+        width: 30%;
+    }
+
+
+    body {
+        font-size: 20px;
+    }
+
+    .main-footer {
+        font-size: 0.8em;
+    }
+
+    div.my-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 
 }
 

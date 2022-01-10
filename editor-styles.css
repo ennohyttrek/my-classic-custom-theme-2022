@@ -1,0 +1,45 @@
+/*
+Stylesheet to adjust the preview in the WP Editor (experimental!)
+
+The aim is for this theme to make the preview in the block editor as neutral as possible, quite the opposite of WYSIWYG.
+The below CSS is mostly the result of trial-and-error, anbd not so much of an educated approach based on proper research in the available handbooks, for example at developer.wordpress.org
+*/
+
+
+
+.wp-block {
+    font-family: 'Inter', sans-serif;
+    padding: 0 10%;
+}
+
+h1.wp-block {
+    font-size: 3em;
+}
+
+h2.wp-block {
+    font-size: 2.3em;
+}
+
+
+h3.wp-block {
+    font-size: 1.8em;
+}
+
+
+p.wp-block,
+ul.wp-block,
+ol.wp-block,
+h4.wp-block {
+    font-size: 1.3em;
+}
+
+p.wp-block,
+ul.wp-block,
+ol.wp-block {
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.wp-block p {
+    padding: 0;
+}
